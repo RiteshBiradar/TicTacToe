@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:ital,wght@0,400;1,300;1,400&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<canvas id="my-canvas"></canvas>
+</head>
+<body>
+    <main> 
+        <h1>Tic Tac Toe</h1>
+        <div class="container">
+           
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+    </main>   
+     <div class="msgContainer hide active">
+        <p id="msg">Winner</p>
+    </div>
+    <div class="playerDetails">
+        <h3>Player O : <span id="spanTag"></span></h3><br>
+        <h3>Player X : <span id="span1Tag"></span></h3>
+        <h3>Draw : <span id="draw"></span></h3>
+    </div>
+    <div class="btn">
+        <button class="resetBtn">Reset</button>
+        <button class="newBtn">New Game</button>
+    </div>
+    <script src="index-min.js"></script>
+    <script src="modify.js"></script>
+</body>
+</html>

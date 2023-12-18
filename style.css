@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+h1, h3 {
+    color: #fff;
+}
+h3{
+    font-size: 3vmin ;
+}
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msgContainer p{
+    font-size: 6vmin;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5vmin;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 10vmin;
+    color: #fff;
+    background: #FF9F1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.playerDetails {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.btn {
+    margin: 1.5vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    background: #D0FEF5;
+    border-radius: 2vmin;
+    padding: 1.5vmin 3vmin;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#my-canvas{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    visibility: hidden;
+}
+#my-canvas.active{
+    visibility: visible;
+}
